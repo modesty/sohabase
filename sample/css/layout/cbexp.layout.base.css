@@ -1,0 +1,55 @@
+/* =universals
+These rules are applied to all elements unless otherwise specified below. */
+* { margin : 0; padding : 0; }
+
+/* =body */
+body { text-align : left; }
+
+/* = */
+h2, h3, h4, h5, p, ul, ol  { margin : 0 20px; padding : .5em 0; }
+
+/* =img */
+img { border: 0px; }
+
+/* =page level container */
+
+#pageContainer 
+{
+    margin: 0px auto 0px auto;
+	width: 960px;
+}
+
+#pageHeader 
+{
+    margin:0px auto 0px auto;
+    width:960px;
+    height:100px;
+    text-align:left;
+}
+
+#contentContainer 
+{
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 500px;
+}
+
+#pageFooter 
+{
+    margin: 0px auto;
+    padding-bottom: 20px;
+	width: 960px;
+	position: relative;
+}
+
+/* Clear Floated Elements */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

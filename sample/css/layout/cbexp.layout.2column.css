@@ -1,0 +1,23 @@
+@import url('cbexp.layout.base.css');
+
+#main_grid-nav {
+    margin-left: 10px;
+    margin-right: 10px;
+	width:220px;
+    float: left;
+    position: relative;
+}
+
+#main_grid-content {
+    margin-left: 10px;
+    margin-right: 10px;
+	width:700px;
+    float:right;
+    position: relative;
+}
+
+
+
+
+
+

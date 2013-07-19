@@ -1,0 +1,18 @@
+body
+{
+	background: #6f8881 url(../img/bk_texture_green.png) repeat-x;
+}
+
+#pageHeader 
+{
+    background: transparent url(../img/bk_header_green.png) no-repeat 0 top;
+} 
+
+#navigation ul li a:hover {
+    background-color: #6f8881;
+}
+
+#contentContainer                           
+{
+    background-color: #f4f4f4;
+}

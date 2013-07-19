@@ -1,0 +1,55 @@
+{
+  "name": "sohabase",
+  "_id": "sohabase@0.1.2",
+  "version": "0.1.2",
+  "description": "jQuery Plug-in for SOHA - Service Oriented HTML Application, also for Web App Common Tasks in client",
+  "keywords": [
+    "jQuery Plugin",
+    "SOHA",
+    "Service Oriented HTML Application",
+    "Web App Common Tasks"
+  ],
+  "author": {
+    "name": "Modesty Zhang",
+    "email": "modestyz@hotmail.com",
+    "url": "http://www.codeproject.com/Articles/Modesty-Zhang"
+  },
+  "homepage": "https://github.com/modesty/sohabase",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/modesty/sohabase.git"
+  },
+  "main": "",
+  "scripts": {
+    "preinstall": ""
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+      "jquery" : ">=1.9.0",
+      "underscore": ">=1.4.2"
+  },
+  "devDependencies": {},
+  "maintainers": [
+    {
+        "name": "Modesty Zhang",
+        "email": "modestyz@hotmail.com",
+        "url": "http://www.codeproject.com/Articles/Modesty-Zhang"
+    }
+  ],
+  "contributors": [
+  ],
+  "bugs": {
+    "email": "modestyz@hotmail.com",
+    "url": "http://github.com/modesty/sohabase/issues"
+  },
+  "licenses": [
+    {
+      "type": "LGPL",
+      "url": "http://www.gnu.org/licenses/lgpl.html"
+    }
+  ],
+  "readme": "https://github.com/modesty/sohabase/blob/master/readme.md",
+  "_from": "sohabase"
+}

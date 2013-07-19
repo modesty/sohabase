@@ -1,0 +1,33 @@
+html.no-js #contentContainer:before, html.no-cookies #contentContainer:before, .errorMsgBox {
+   content: "You don't have JavaScript enabled. In order to view our website, enable JavaScript in your browser settings and then refresh this page.";
+   display: block;
+   border: solid 2px red;
+   padding: 10px;
+   margin: 10px;
+   color: maroon;
+   font-size: 1.2em;
+   background-color: #ffffe0;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+html.no-cookies #contentContainer:before {
+   content: "You don't have browser cookie enabled. In order to view our website, enable Cookie in your browser settings and then refresh this page.";
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    overflow-y: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*Overwrite Bootstrap styles*/
+input, button, select, textarea {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+label {
+    margin-bottom: 0;
+}

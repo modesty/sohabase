@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="Common Browser Tasks by jQuery, Modesty (Qian) Zhang" />
+    <meta name="description" content="Demo HTML that shows the functionalities of Common browser tasks" />
+    <title>Web App Common Tasks by jQuery - Test Page</title>
+
+    <link rel="stylesheet" type="text/css" href="../lib/css/jquery.soha.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout/cbexp.layout.base.css" />
+    <link rel="stylesheet" type="text/css" href="css/visual/cbexp.visual.base.css" />
+    
+    <script src="js/lib/modernizr.js"></script>
+</head>
+<body>
+    <div id="pageContainer">
+        <div id="pageHeader">
+        </div>
+        <div id="contentContainer">
+            <div id="main_grid-nav">
+            </div>
+
+            <div id="main_grid-content">
+                <div id="pageTitleSection">
+                    <p class="pageTitle">Welcome to Web App Common Tasks Test Page</p>
+                    <p class="pageSubTitle">Dynamically load HTML, CSS based on Query String</p>
+                </div>
+
+                <div class="userActionSection">
+                    <p class="pageSubTitle">The following link will load all HTML and CSS</p>
+	                <a class="pageSubTitleHint" href="?headerfooter=both&theme=green">Load Header, Footer and Green Theme (Two Column Layout)</a>
+	                <a class="pageSubTitleHint" href="?headerfooter=both&theme=blue">Load Header, Footer and Blue Theme (Reversed Two Column Layout)</a>
+                </div>
+
+                <div class="userActionSection">
+                    <div id="firstTimeUserSection">
+                        <p class="pageSubTitle">Loading HTML (No Theme)</p>
+                        <a class="pageSubTitleHint" href="?headerfooter=header">Load Header Only</a>
+                        <a class="pageSubTitleHint" href="?headerfooter=footer">Load Footer Only</a>
+                        <a class="pageSubTitleHint" href="?headerfooter=both">Load Header and Footer (no theme)</a>
+                    </div>
+
+                    <div id="returingUserSection">
+                        <p class="pageSubTitle">Loading CSS (No Header and Footer)</p>
+                        <a class="pageSubTitleHint" href="?theme=green">Green Theme (Two Column Layout)</a>
+                        <a class="pageSubTitleHint" href="?theme=blue">Blue Theme (Reversed Two Column Layout)</a>
+                    </div>
+
+                    <br class="clear" />
+                </div>
+            </div>
+        </div>
+        <br class="clear" />
+        <div id="pageFooter">
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/lib/jquery.js"><\/script>')</script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="../lib/js/jquery.soha.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

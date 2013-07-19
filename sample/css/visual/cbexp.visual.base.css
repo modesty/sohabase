@@ -1,0 +1,67 @@
+body
+{
+    color:#333333;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+input 
+{
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:14px;
+}
+
+#pageContainer                           
+{
+    text-align:left;
+    font-size:14px;
+}
+
+#pageContainer, #noCookieContainer {
+	display:none;
+}
+
+.pageTitle
+{
+	font-size: 28px;
+	color: #465159;
+}
+
+.pageSubTitle
+{
+	font-size: 22px;
+	color: #68737c;
+}
+
+.pageSubTitleHint
+{
+	margin-left: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	color: #333333;
+	display:block;
+	text-decoration:none;
+}
+
+.pageSubTitleHint:hover
+{
+	color: #000000;
+	text-decoration:underline;
+}
+
+#firstTimeUserSection
+{
+	width: 300px;
+	float: left;
+}
+
+#returingUserSection
+{
+	width: 360px;
+	float: left;
+}
+
+.userActionSection
+{
+	margin-top: 30px;
+}
+
