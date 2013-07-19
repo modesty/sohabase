@@ -31,8 +31,9 @@ A jQuery Plugin for [Service Oriented HTML Application](http://www.codeproject.c
 * getPathName: function()
 * getPageName: function()
 
-###Cookie Detector
+###Detectors
 * isCookieEnabled : function ()
+* CSS based JavaScript detector, see lib/css/jquery.sohabase.css for details
 
 ###Dynamica Loading Script and CSS
 * loadPageScript : function(jsUrl, onSuccess, onError)
