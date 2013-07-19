@@ -47,5 +47,7 @@ A jQuery Plugin for [Service Oriented HTML Application](http://www.codeproject.c
 ##More Info
 
 [Sample App](http://www.hanray.com/sites/WebAppCommonTasksByjQuery/)
+
 [Web App Common Tasks by jQuery](http://www.codeproject.com/Articles/110076/Web-App-Common-Tasks-by-jQuery)
+
 [SOHA - Service Oriented HTML Application (Concepts and Principles)](http://www.codeproject.com/Articles/118683/SOHA-Service-Oriented-HTML-Application-Concepts-an)
