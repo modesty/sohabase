@@ -5,7 +5,6 @@ A jQuery Plugin for [Service Oriented HTML Application](http://www.codeproject.c
 
 ##Installation
 
-
           git clone https://github.com/modesty/sohabase
 
 ##Dependencies
@@ -15,35 +14,103 @@ A jQuery Plugin for [Service Oriented HTML Application](http://www.codeproject.c
 
 ##Main Features
 
-###Extended Ajax With Response Parser
-* loadContentHTML : function (containerID, htmlURL, onResult)
-* loadTemplateNData : function (jsonURL, templateURL, onResult)
-* postJson : function (postURL, jsDataObj, onSuccess, onError, httpMethodOverride)
+###Extended Ajax for page content and service integration
+* Ajax Content: dynamic loading/assembling page content
+
+          $.soha.loadContentHTML : function (containerID, htmlURL, onResult)
+
+* Ajax Content and templating: dynamically loading data driven (json) content, depends on underscore's template to generate final output
+
+          $.soha.loadTemplateNData : function (jsonURL, templateURL, onResult)
+
+* Ajax with httpMethodOverride and response/error parsering
+
+          $.soha.postJson : function (postURL, jsDataObj, onSuccess, onError, httpMethodOverride)
+
+* Dynamically loading page script
+
+          $.soha.loadPageScript : function(jsUrl, onSuccess, onError)
+
+* Dynamically loading page CSS
+
+          $.soha.loadPageCSS : function (cssUrl, noVerInfo)
+
 
 ###HTML5 Session Storage
-* setSessionStorageItem : function(key, strVal)
-* getSessionStorageItem : function(key)
-* clearSessionStorageItem : function(key)
+* Create string value to session storage with key
+
+          $.soha.setSessionStorageItem : function(key, strVal)
+
+* Read string value from session storage by key
+
+          $.soha.getSessionStorageItem : function(key)
+
+* Delete string value from session storage by key
+
+          $.soha.clearSessionStorageItem : function(key)
 
 ###URL Parser
-* getQueryString : function ()
-* getHashString : function()
-* getPathName: function()
-* getPageName: function()
+* Return an object hash for query string name-value pairs or null if no query string in current url
+
+          $.soha.getQueryString : function ()
+
+* Return hash string, handling query string in url as well
+
+          $.soha.getHashString : function()
+
+* Return current url's path (without host), handles default path for home path
+
+          $.soha.getPathName: function()
+
+* Return current page name base on url path, handles default page for index.html
+
+          $.soha.getPageName: function()
 
 ###Detectors
-* isCookieEnabled : function ()
+* Detect user's browser's cookie without depending on other plugins
+
+          $.soha.isCookieEnabled : function ()
+
+          //In lib/css/jquery.sohabase.css:
+
+          html.no-cookies #contentContainer:before {
+             content: "You don't have browser cookie enabled. In order to view our website, enable Cookie in your browser settings and then refresh this page.";
+          }
+
+
 * CSS based JavaScript detector, see lib/css/jquery.sohabase.css for details
 
-###Dynamica Loading Script and CSS
-* loadPageScript : function(jsUrl, onSuccess, onError)
-* loadPageCSS : function (cssUrl, noVerInfo)
+          html.no-js #contentContainer:before, html.no-cookies #contentContainer:before, .errorMsgBox {
+             content: "You don't have JavaScript enabled. In order to view our website, enable JavaScript in your browser settings and then refresh this page.";
+             display: block;
+             border: solid 2px red;
+             padding: 10px;
+             margin: 10px;
+             color: maroon;
+             font-size: 1.2em;
+             background-color: #ffffe0;
+             -moz-border-radius: 10px;
+             -webkit-border-radius: 10px;
+             border-radius: 10px;
+          }
+
 
 ###Warn the User Before Navigate
-* setDirtyFlag : function (docDirty)
-* confirmExit : function ()
-* refreshContent : function ()
-* navigate : function(newURL)
+* Call with docFirty to be true to warn user when navigate away from current page or shutting down browser
+
+          $.soha.setDirtyFlag : function (docDirty)
+
+* Default event handler when user navigate away
+
+          $.soha.confirmExit : function ()
+
+* Refresh current page regardless docDirty flag
+
+          $.soha.refreshContent : function ()
+
+* Navigate to new url with full control of url and docDirty flag
+
+          $.soha.navigate : function(newURL)
 
 ##More Info
 
